@@ -178,7 +178,7 @@ color: #000;
   text-transform: uppercase;
   text-align: left;
   font-weight: bold;
-  width: 35%; /* регулируешь ширину под себя */
+  width: 35%; 
   letter-spacing: 0.05em;
 }
 
