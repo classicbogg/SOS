@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+
+  }
+.back {
+  background-image: url("background.png"); 
+  background-size: cover;     
+  background-repeat: no-repeat; 
+  background-position: center; 
+   background-attachment: fixed;
+}
+.back {
+      text-decoration: none;
+    border: none;
+    outline: none;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header a {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+}
+.lang {
+  position: relative;         
+  display: inline-block;     
+  font-family: sans-serif;
+  color: white;
+}
+
+.current {
+  background: navy;
+  cursor: pointer;
+
+}
+
+.dropdown {
+  display: none;              
+  position: absolute;
+   background: rgba(0, 0, 0, 0.85);
+}
+.lang:hover .dropdown {
+  display: block;
+}
+.dropdown div {
+  padding: 5px 0;
+  cursor: pointer;
+}
+.dropdown div:hover {
+  color: orange;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column ;
+    margin-top: 100px;
+}
+.title button {
+background-image: linear-gradient(#FFB548, #F3AF34);
+width: 200px;
+height: 60px;
+border: none;
+font-size: 15px;
+cursor: pointer; 
+border-radius: 6px; 
+color: #000;   
+}
+.title button:hover {
+  background-image: linear-gradient(to bottom, #c78c1d, #e2c750);
+  
+}
+
+
+.down {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 550px;
+}
+.spechial span {
+ color:#FFB548 ;
+}
+.back2 {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 1080px;
+    background-image: url("background2.jpg"); 
+  background-size: cover;     
+  background-repeat: no-repeat; 
+  background-position: center; 
+   background-attachment: fixed;
+   font-size: 18px;
+     margin-right: 50px;
+}
+
+.container_2 {
+  width: 100%;
+  height: 1080px;
+  background-image: url('background3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  flex-flow: column nowrap;
+
+}
+.title {
+  color: white;
+  font-weight: bold;
+}
+.title a {
+  text-decoration: none;
+  color: black;
+}
+.back3 {
+  width: 100%;
+  height: 1080px;
+  background-image: url('background4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text_info {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+
+.system {
+  border-collapse: collapse; 
+  width: 100%;
+  max-width: 900px;
+  color: white;
+  background: rgba(0,0,0,0.25); 
+  font-family: sans-serif;
+  margin-right: 500px;
+  font-size: 20px;
+  gap: 5px;
+}
+
+.system th,
+.system td {
+  border: 1px solid #444;  
+  padding: 12px 16px;
+  vertical-align: top;
+}
+
+
+.system th {
+  color: orange;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: bold;
+  width: 35%; /* регулируешь ширину под себя */
+  letter-spacing: 0.05em;
+}
+
+.system td {
+  color: white;
+  font-weight: 400;
+}
+
+
+.slider{
+  position: relative;
+  width: 700px;          
+  height: 700px;   
+  overflow: hidden;
+  border-radius: 8px;
+}
+.slide{
+  position: absolute;
+ inset: 0;     /*заменяет то что ниже, удобно */
+                /* top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fade 9s infinite;  
+}
+.s2 { animation-delay: 3s; }
+.s3 { animation-delay: 6s; }
+@keyframes fade{
+  0%   { opacity: 0; }
+  5%   { opacity: 1; }   
+  30%  { opacity: 1; }   
+  35%  { opacity: 0; }   
+  100% { opacity: 0; }
+}
